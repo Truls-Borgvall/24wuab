@@ -3,10 +3,185 @@ html, body {
     padding: 0;
 }
 
-#index-wrapper {
-    display: grid;
-    height: 1000vh;
+.brand-color {
+    color: none;
+}
 
-    grid-template-areas: 
-    ;
+
+@media screen and (max-width: 768px) {
+    /* index grid */
+    #index-wrapper {
+        display: grid;
+        height: 1000vh;
+        width: 100vw;
+    
+        grid-template-areas: 
+        "hed"
+        "ihr"
+        "tx1"
+        "tx2"
+        "tx3"
+        "ben"
+        "sc4"
+        "soc"
+        "blg"
+        "fot";
+    
+        grid-template-rows: 100px 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 600px;
+    }
+
+    header {
+        grid-area: hed;
+        background-color: red;
+    }
+
+    #index-hero {
+        grid-area: ihr;
+        background-color: orange;
+    }
+
+    #text1 {
+        grid-area: tx1;
+        background-color: yellow;
+    }
+
+    #text2 {
+        grid-area: tx2;
+        background-color: green;
+    }
+
+    #text3 {
+        grid-area: tx3;
+        background-color: blue;
+    }
+
+    #benefits {
+        grid-area: ben;
+        background-color: purple;
+    }
+
+    #section4 {
+        grid-area: sc4;
+        background-color: pink;
+    }
+
+    #social {
+        grid-area: soc;
+        background-color: red;
+    }
+
+    #blog {
+        grid-area: blg;
+        background-color: orange;
+    }
+
+    footer {
+        grid-area: fot;
+        background-color: yellow;
+    }
+
+
+
+    /* sporter grid */
+    #sporter-wrapper {
+        display: grid;
+        height: 500vh;
+        width: 100vw;
+    
+        grid-template-areas: 
+        "hed"
+        "shr"
+        "sp1"
+        "sp2"
+        "sp3"
+        "fot";
+    
+        grid-template-rows: 100px 10fr 30fr 30fr 30fr 600px;
+    }
+
+    #sporter-hero {
+        grid-area: shr;
+        background-color: orange;
+    }
+
+    #sport1 {
+        grid-area: sp1;
+        background-color: yellow;
+    }
+
+    #sport2 {
+        grid-area: sp2;
+        background-color: green;
+    }
+
+    #sport3 {
+        grid-area: sp3;
+        background-color: blue;
+    }
+    
+
+
+    /* borja-trana grid */
+    #borja-trana-wrapper {
+        display: grid;
+        height: 300vh;
+        width: 100vw;
+    
+        grid-template-areas: 
+        "hed"
+        "bhr"
+        "qst"
+        "fot";
+    
+        grid-template-rows: 100px 10fr 30fr 600px;
+    }
+
+    #borja-trana-hero {
+        grid-area: bhr;
+        background-color: orange;
+    }
+
+    #questions {
+        grid-area: qst;
+        background-color: green;
+    }
+
+
+
+    /* om oss grid */
+    #om-oss-wrapper {
+        display: grid;
+        height: 300vh;
+        width: 100vw;
+    
+        grid-template-areas: 
+        "hed"
+        "ohr"
+        "gol"
+        "stf"
+        "map"
+        "fot";
+    
+        grid-template-rows: 100px 10fr 10fr 10fr 10fr 600px;
+    }
+
+    #om-oss-hero {
+        grid-area: ohr;
+        background-color: orange;
+    }
+
+    #goal {
+        grid-area: gol;
+        background-color: yellow;
+    }
+
+    #staff {
+        grid-area: stf;
+        background-color: green;
+    }
+
+    #map {
+        grid-area: map;
+        background-color: blue;
+    }
 }
