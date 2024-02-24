@@ -1,33 +1,54 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
 
 .brand-color {
     color: none;
 }
 
+.hero {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero button {
+    margin-top: 20px;
+}
+
 
 @media screen and (max-width: 768px) {
+
     /* index grid */
     #index-wrapper {
         display: grid;
-        height: 1000vh;
+        height: 600vh;
         width: 100vw;
-    
-        grid-template-areas: 
-        "hed"
-        "ihr"
-        "tx1"
-        "tx2"
-        "tx3"
-        "ben"
-        "sc4"
-        "soc"
-        "blg"
-        "fot";
-    
-        grid-template-rows: 100px 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 600px;
+
+        grid-template-areas:
+            "hed"
+            "ihr"
+            "tx1"
+            "tx2"
+            "tx3"
+            "ben"
+            "sc4"
+            "soc"
+            "blg"
+            "fot";
+
+        grid-template-rows: 100px 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 700px;
     }
 
     header {
@@ -58,6 +79,10 @@ html, body {
     #benefits {
         grid-area: ben;
         background-color: purple;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     #section4 {
@@ -80,22 +105,102 @@ html, body {
         background-color: yellow;
     }
 
+    /* index css styling */
 
+    header,
+    #index-hero,
+    #text1,
+    #text2,
+    #text3,
+    #benefits,
+    #section4,
+    #social,
+    #blog,
+    footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #text1,
+    #text2,
+    #text3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-column,
+    .text-column {
+        flex: 1;
+    }
+
+    .image-column img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .image-column {
+        background-color: brown;
+    }
+
+    .benefits-container li {
+        line-height: 40px;
+    }
+
+    #section4 img{
+        width: 100%;
+        height: 300px;
+        background-color: brown;
+    }
+
+    .social-container {
+        padding: 10px;
+        border: 0.5px solid lightgray;
+        border-radius: 10px;
+
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .links {
+        flex: 1;
+    }
+
+    .social-container a {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    #blog img {
+        background-color: brown;
+        width: 100%;
+        height: 300px;
+    }
+
+    .footer-list {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .footer-list a {
+        display: block;
+    }
 
     /* sporter grid */
     #sporter-wrapper {
         display: grid;
         height: 500vh;
         width: 100vw;
-    
-        grid-template-areas: 
-        "hed"
-        "shr"
-        "sp1"
-        "sp2"
-        "sp3"
-        "fot";
-    
+
+        grid-template-areas:
+            "hed"
+            "shr"
+            "sp1"
+            "sp2"
+            "sp3"
+            "fot";
+
         grid-template-rows: 100px 10fr 30fr 30fr 30fr 600px;
     }
 
@@ -118,7 +223,7 @@ html, body {
         grid-area: sp3;
         background-color: blue;
     }
-    
+
 
 
     /* borja-trana grid */
@@ -126,13 +231,13 @@ html, body {
         display: grid;
         height: 300vh;
         width: 100vw;
-    
-        grid-template-areas: 
-        "hed"
-        "bhr"
-        "qst"
-        "fot";
-    
+
+        grid-template-areas:
+            "hed"
+            "bhr"
+            "qst"
+            "fot";
+
         grid-template-rows: 100px 10fr 30fr 600px;
     }
 
@@ -153,15 +258,15 @@ html, body {
         display: grid;
         height: 300vh;
         width: 100vw;
-    
-        grid-template-areas: 
-        "hed"
-        "ohr"
-        "gol"
-        "stf"
-        "map"
-        "fot";
-    
+
+        grid-template-areas:
+            "hed"
+            "ohr"
+            "gol"
+            "stf"
+            "map"
+            "fot";
+
         grid-template-rows: 100px 10fr 10fr 10fr 10fr 600px;
     }
 
@@ -183,5 +288,41 @@ html, body {
     #map {
         grid-area: map;
         background-color: blue;
+    }
+
+    .mobile-nav-button {
+        cursor: pointer;
+        display: inline;
+    }
+
+    .mobile-nav {
+        height: 100vh;
+        width: 80vw;
+        background: hotpink;
+        position: fixed;
+        top: 0;
+        left: -90vw;
+        transition: left 0.3s;
+        box-shadow: 10px 0px 21px -10px rgba(0, 0, 0, 0.75);
+        z-index: 10;
+    }
+
+    .show {
+        left: 0;
+    }
+
+    .fade-layer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 5;
+    }
+
+    .fade-layer.visible {
+        display: block;
     }
 }
