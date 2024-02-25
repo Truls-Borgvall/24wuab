@@ -42,11 +42,6 @@ function prevStep() {
     }
 }
 
-form.addEventListener('submit', function (event) {
-    event.preventDefault();
-    // You can handle form submission here
-    console.log('Form submitted!');
-});
 
 showStep(1);
 

@@ -48,7 +48,7 @@ body {
             "blg"
             "fot";
 
-        grid-template-rows: 100px 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 700px;
+        grid-template-rows: 100px 400px 10fr 10fr 10fr 10fr 10fr 10fr 10fr 700px;
     }
 
     header {
@@ -219,7 +219,7 @@ body {
             "sp3"
             "fot";
 
-        grid-template-rows: 100px 10fr 30fr 30fr 30fr 700px;
+        grid-template-rows: 100px 400px auto auto auto 700px;
     }
 
     #sporter-hero {
@@ -256,7 +256,7 @@ body {
             "qst"
             "fot";
 
-        grid-template-rows: 100px 10fr 10fr 700px;
+        grid-template-rows: 100px 400px 10fr 700px;
     }
 
     #borja-trana-hero {
@@ -285,7 +285,7 @@ body {
             "map"
             "fot";
 
-        grid-template-rows: 100px 10fr 10fr 10fr 10fr 700px;
+        grid-template-rows: 100px 400px 10fr 10fr 10fr 700px;
     }
 
     #om-oss-hero {
