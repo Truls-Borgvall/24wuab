@@ -121,6 +121,24 @@ body {
         padding-right: 20px;
     }
 
+    .mobile-nav-button {
+        cursor: pointer;
+        display: inline;
+    }
+
+    .mobile-nav {
+        height: 100vh;
+        width: 80vw;
+        background: hotpink;
+        position: fixed;
+        top: 0;
+        left: -90vw;
+        transition: left 0.3s;
+        box-shadow: 10px 0px 21px -10px rgba(0, 0, 0, 0.75);
+        z-index: 10;
+    }
+
+
     #text1,
     #text2,
     #text3 {
@@ -146,7 +164,7 @@ body {
         line-height: 40px;
     }
 
-    #section4 img{
+    #section4 img {
         width: 100%;
         height: 300px;
         background-color: brown;
@@ -201,7 +219,7 @@ body {
             "sp3"
             "fot";
 
-        grid-template-rows: 100px 10fr 30fr 30fr 30fr 600px;
+        grid-template-rows: 100px 10fr 30fr 30fr 30fr 700px;
     }
 
     #sporter-hero {
@@ -229,7 +247,7 @@ body {
     /* borja-trana grid */
     #borja-trana-wrapper {
         display: grid;
-        height: 300vh;
+        height: 200vh;
         width: 100vw;
 
         grid-template-areas:
@@ -238,7 +256,7 @@ body {
             "qst"
             "fot";
 
-        grid-template-rows: 100px 10fr 30fr 600px;
+        grid-template-rows: 100px 10fr 10fr 700px;
     }
 
     #borja-trana-hero {
@@ -267,7 +285,7 @@ body {
             "map"
             "fot";
 
-        grid-template-rows: 100px 10fr 10fr 10fr 10fr 600px;
+        grid-template-rows: 100px 10fr 10fr 10fr 10fr 700px;
     }
 
     #om-oss-hero {
@@ -290,23 +308,8 @@ body {
         background-color: blue;
     }
 
-    .mobile-nav-button {
-        cursor: pointer;
-        display: inline;
-    }
 
-    .mobile-nav {
-        height: 100vh;
-        width: 80vw;
-        background: hotpink;
-        position: fixed;
-        top: 0;
-        left: -90vw;
-        transition: left 0.3s;
-        box-shadow: 10px 0px 21px -10px rgba(0, 0, 0, 0.75);
-        z-index: 10;
-    }
-
+    /* Javascript klasser: */
     .show {
         left: 0;
     }
@@ -324,5 +327,9 @@ body {
 
     .fade-layer.visible {
         display: block;
+    }
+
+    .step {
+        display: none;
     }
 }
