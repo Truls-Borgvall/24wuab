@@ -1,3 +1,4 @@
+// Hamburger menu:
 function showMenu() {
     let menu = document.querySelector(".mobile-nav")
     let layer = document.querySelector(".fade-layer")
@@ -9,7 +10,7 @@ function showMenu() {
 document.querySelector(".fade-layer").addEventListener("click", showMenu)
 button = document.querySelector(".mobile-nav-button").addEventListener("click", showMenu)
 
-
+// Multi-step form:
 document.addEventListener('click', function (event) {
     if (event.target.matches('button[data-action="next"]')) {
         nextStep();
@@ -19,14 +20,14 @@ document.addEventListener('click', function (event) {
 });
 
 let currentStep = 1;
-const form = document.getElementById('multiStepForm');
-const steps = document.querySelectorAll('.step');
+const form = document.getElementById("multiStepForm");
+const steps = document.querySelectorAll(".step");
 
 function showStep(stepNumber) {
     steps.forEach(step => {
-        step.style.display = 'none';
+        step.style.display = "none";
     });
-    document.getElementById(`step${stepNumber}`).style.display = 'block';
+    document.getElementById("step${stepNumber}").style.display = "block";
     currentStep = stepNumber;
 }
 
@@ -42,7 +43,8 @@ function prevStep() {
     }
 }
 
-
 showStep(1);
 
+
+// Blurred & transparent header:
 

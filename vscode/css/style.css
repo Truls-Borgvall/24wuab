@@ -4,27 +4,27 @@ body {
     padding: 0;
 }
 
+* {
+    font-family: "Ubuntu", sans-serif;
+}
 
+p {
+    color: rgb(106,106,106)
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
 .material-symbols-outlined {
     font-variation-settings:
         'FILL' 0,
         'wght' 400,
         'GRAD' 0,
         'opsz' 24
-}
-
-
-.brand-color {
-    color: none;
-}
-
-.hero {
-    text-align: center;
-    padding: 20px;
-}
-
-.hero button {
-    margin-top: 20px;
 }
 
 
@@ -37,7 +37,6 @@ body {
         width: 100vw;
 
         grid-template-areas:
-            "hed"
             "ihr"
             "tx1"
             "tx2"
@@ -48,32 +47,50 @@ body {
             "blg"
             "fot";
 
-        grid-template-rows: 100px 400px 10fr 10fr 10fr 10fr 10fr 10fr 10fr 700px;
+        grid-template-rows: 400px 10fr 10fr 10fr 10fr 10fr 10fr 10fr 750px;
+
+        padding-top: 80px;
     }
 
     header {
-        grid-area: hed;
-        background-color: red;
+        background-color: rgb(197,23,20);
+    
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 80px;
+        transition: background-color 0.3s ease;
+        z-index: 4;
     }
 
     #index-hero {
         grid-area: ihr;
-        background-color: orange;
+        background-image: url("/img/index-hero_test.jpg");
+        background-color: white;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        
     }
 
     #text1 {
         grid-area: tx1;
-        background-color: yellow;
+        background-color: white;
     }
 
     #text2 {
         grid-area: tx2;
-        background-color: green;
+        background-color: white;
     }
 
     #text3 {
         grid-area: tx3;
-        background-color: blue;
+        background-color: white;
     }
 
     #benefits {
@@ -106,8 +123,39 @@ body {
     }
 
     /* index css styling */
+    .brand-color {
+        color: rgb(197,23,20);
+    }
+    
+    .brand-button {
+        padding: 10px 15px;
 
-    header,
+        font-size: 1rem;
+        font-weight: bold;
+
+        color: white;
+        background-color: rgb(197,23,20);
+
+        border: none;
+        border-radius: 8px;
+
+        cursor: pointer;
+    }
+    
+    .hero {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .hero button {
+        margin-top: 20px;
+    }
+    
+    .hero h1 {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
     #index-hero,
     #text1,
     #text2,
@@ -117,6 +165,15 @@ body {
     #social,
     #blog,
     footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    header img {
+        height: 50px;
+    }
+
+    header span {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -137,7 +194,6 @@ body {
         box-shadow: 10px 0px 21px -10px rgba(0, 0, 0, 0.75);
         z-index: 10;
     }
-
 
     #text1,
     #text2,
@@ -219,7 +275,7 @@ body {
             "sp3"
             "fot";
 
-        grid-template-rows: 100px 400px auto auto auto 700px;
+        grid-template-rows: 80px 400px auto auto auto 750px;
     }
 
     #sporter-hero {
@@ -256,7 +312,7 @@ body {
             "qst"
             "fot";
 
-        grid-template-rows: 100px 400px 10fr 700px;
+        grid-template-rows: 80px 400px 10fr 750px;
     }
 
     #borja-trana-hero {
@@ -285,7 +341,7 @@ body {
             "map"
             "fot";
 
-        grid-template-rows: 100px 400px 10fr 10fr 10fr 700px;
+        grid-template-rows: 80px 400px 10fr 10fr 10fr 750px;
     }
 
     #om-oss-hero {
@@ -332,4 +388,5 @@ body {
     .step {
         display: none;
     }
+
 }
