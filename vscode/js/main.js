@@ -20,14 +20,14 @@ document.addEventListener('click', function (event) {
 });
 
 let currentStep = 1;
-const form = document.getElementById("multiStepForm");
-const steps = document.querySelectorAll(".step");
+const form = document.getElementById('multiStepForm');
+const steps = document.querySelectorAll('.step');
 
 function showStep(stepNumber) {
     steps.forEach(step => {
-        step.style.display = "none";
+        step.style.display = 'none';
     });
-    document.getElementById("step${stepNumber}").style.display = "block";
+    document.getElementById(`step${stepNumber}`).style.display = 'block';
     currentStep = stepNumber;
 }
 

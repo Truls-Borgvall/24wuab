@@ -2,6 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    background-color: lightgray;
 }
 
 * {
@@ -47,8 +48,9 @@ h2 {
             "blg"
             "fot";
 
-        grid-template-rows: 400px 10fr 10fr 10fr 10fr 10fr 10fr 10fr 750px;
+        grid-template-rows: 400px 10fr 10fr 10fr 10fr 10fr 10fr 10fr 850px;
 
+        gap: 1px;
         padding-top: 80px;
     }
 
@@ -95,31 +97,28 @@ h2 {
 
     #benefits {
         grid-area: ben;
-        background-color: purple;
+        background-color: white;
 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
 
     #section4 {
         grid-area: sc4;
-        background-color: pink;
+        background-color: white;
     }
 
     #social {
         grid-area: soc;
-        background-color: red;
+        background-color: white;
     }
 
     #blog {
         grid-area: blg;
-        background-color: orange;
+        background-color: white;
     }
 
     footer {
         grid-area: fot;
-        background-color: yellow;
+        background-color: rgb(197,23,20);
     }
 
     /* index css styling */
@@ -216,6 +215,13 @@ h2 {
         background-color: brown;
     }
 
+    .benefits-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
     .benefits-container li {
         line-height: 40px;
     }
@@ -224,6 +230,12 @@ h2 {
         width: 100%;
         height: 300px;
         background-color: brown;
+    }
+    
+    .explore-card {
+        background-color: rgb(247,247,247);
+        padding: 10px;
+        border-radius: 10px;
     }
 
     .social-container {
@@ -246,19 +258,77 @@ h2 {
         right: 10px;
     }
 
+    .link-container {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .link-container img {
+        width: 50px;
+        padding-right: 10px;
+    }
+
+    .link-text-container .platform {
+        margin: 0 0 5px 0;
+        font-weight: bold;
+    }
+
+    .link-text-container p {
+        margin: 0;
+    }
+
+
     #blog img {
         background-color: brown;
         width: 100%;
         height: 300px;
     }
 
+    footer *{
+        color: white;
+    }
+
     .footer-list {
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .footer-list a {
         display: block;
+    }
+
+    footer h3 {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    footer button {
+        padding: 10px 15px;
+
+        font-size: 1rem;
+        font-weight: bold;
+
+        color: white;
+        background-color: black;
+
+        border: none;
+        border-radius: 8px;
+
+        cursor: pointer;
+    }
+
+    footer h4 {
+        font-size: 1.2rem;
+    }
+
+    footer input {
+        border: none;
+        padding: 10px;
+        margin-right: 10px;
+        border-radius: 8px;
+        color: black;
     }
 
     /* sporter grid */

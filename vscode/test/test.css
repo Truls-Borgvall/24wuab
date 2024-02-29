@@ -1,0 +1,22 @@
+#test-wrapper {
+    display: grid;
+    height: 1000vh;
+    width: 100vw;
+
+    grid-template-areas:
+        "hd"
+        "sc"
+        "ft";
+
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+header {
+    /* Your existing styles */
+    background-color: red; /* Initial background color */
+    transition: background-color 0.3s ease;
+}
+
+.show {
+    display: none;
+}
