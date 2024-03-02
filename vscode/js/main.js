@@ -1,15 +1,20 @@
+
 // Hamburger menu:
 function showMenu() {
     let menu = document.querySelector(".mobile-nav")
-    let layer = document.querySelector(".fade-layer")
+    let header = document.getElementById("header")
+    let button = document.querySelector(".mobile-nav-button")
+    let cross = document.querySelector(".mobile-nav-cross")
 
+    header.classList.remove("header-scrolled")
     menu.classList.toggle("show")
-    layer.classList.toggle("visible")
+
+    button.classList.toggle("hidden")
+    cross.classList.toggle("hidden")
 }
 
-document.querySelector(".fade-layer").addEventListener("click", showMenu)
 button = document.querySelector(".mobile-nav-button").addEventListener("click", showMenu)
-
+cross = document.querySelector(".mobile-nav-cross").addEventListener("click", showMenu)
 
 
 //Carousel (tagit insperation):
@@ -31,6 +36,18 @@ buttons.forEach(button => {
 })
 
 // Blurred & transparent header:
+window.addEventListener('scroll', function() {
+    var header = document.getElementById('header');
+    var scrollPosition = window.scrollY;
+    let menu = document.querySelector(".mobile-nav")
+
+    if (scrollPosition === 0 || menu.classList.contains('show')) {
+        header.classList.remove('header-scrolled');
+    } else {
+        header.classList.add('header-scrolled');
+    }
+});
+
 
 
 // Multi-step form:

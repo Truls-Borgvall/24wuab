@@ -1,19 +1,20 @@
-.brand-gradient {
-    color: transparent;
-    background-clip: text;
-    background-image: linear-gradient(to right, rgb(197, 23, 20), rgb(215,173,65), rgb(197, 23, 20));
-}
-
 html,
 body {
     margin: 0;
     padding: 0;
-    background-color: lightgray;
 }
 
 
 * {
     font-family: "Inter", sans-serif;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }
 
 p {
@@ -28,13 +29,32 @@ h2 {
     font-size: 1.7rem;
 }
 
-.material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24
+.brand-color {
+    color: rgb(197, 23, 20);
 }
+
+
+.brand-gradient {
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right, rgb(197, 23, 20), rgb(215, 173, 65), rgb(197, 23, 20));
+}
+
+.brand-button {
+    padding: 10px 15px;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    color: white;
+    background-color: rgb(197, 23, 20);
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
 
 
 @media screen and (max-width: 768px) {
@@ -56,15 +76,10 @@ h2 {
             "blg"
             "fot";
 
-        grid-template-rows: 400px 10fr 10fr 10fr 10fr 10fr 10fr 10fr 850px;
-
-        gap: 1px;
-        padding-top: 80px;
+        grid-template-rows: 400px 10fr 10fr 10fr 5fr 10fr 10fr 10fr 900px;
     }
 
     header {
-        background-color: rgb(197, 23, 20);
-
 
         display: flex;
         justify-content: space-between;
@@ -74,17 +89,21 @@ h2 {
         top: 0;
         width: 100vw;
         height: 80px;
-        transition: background-color 0.3s ease;
         z-index: 4;
+
+        background-color: transparent;
+        backdrop-filter: blur(0px);
+        transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
     }
 
     #index-hero {
         grid-area: ihr;
-        background-image: url("/img/index-hero_test.jpg");
         background-color: white;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+
+        padding-top: 50px;
 
     }
 
@@ -101,17 +120,19 @@ h2 {
     #text3 {
         grid-area: tx3;
         background-color: white;
+        position: relative;
     }
 
     #benefits {
         grid-area: ben;
-        background-color: white;
-
+        background-color: rgb(197, 23, 20);
+        position: relative;
     }
 
-    #section4 {
+    #explore {
         grid-area: sc4;
         background-color: white;
+        position: relative;
     }
 
     #social {
@@ -130,45 +151,12 @@ h2 {
     }
 
     /* index css styling */
-    .brand-color {
-        color: rgb(197, 23, 20);
-    }
-
-    .brand-button {
-        padding: 10px 15px;
-
-        font-size: 1rem;
-        font-weight: bold;
-
-        color: white;
-        background-color: rgb(197, 23, 20);
-
-        border: none;
-        border-radius: 8px;
-
-        cursor: pointer;
-    }
-
-    .hero {
-        text-align: center;
-        padding: 20px;
-    }
-
-    .hero button {
-        margin-top: 20px;
-    }
-
-    .hero h1 {
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-
     #index-hero,
     #text1,
     #text2,
     #text3,
     #benefits,
-    #section4,
+    #explore,
     #social,
     #blog,
     footer {
@@ -192,14 +180,44 @@ h2 {
 
     .mobile-nav {
         height: 100vh;
-        width: 80vw;
-        background: hotpink;
+        width: 100vw;
+        background: transparent;
+        backdrop-filter: blur(20px);
         position: fixed;
-        top: 0;
-        left: -90vw;
-        transition: left 0.3s;
-        box-shadow: 10px 0px 21px -10px rgba(0, 0, 0, 0.75);
-        z-index: 10;
+        top: -100vh;
+        left: 0;
+        transition: top 0.3s;
+        z-index: 3;
+    }
+
+    .nav-container {
+        display: grid;
+        margin-top: 80px;
+        margin-left: 20px;
+    }
+
+    nav a {
+        color: black;
+        text-decoration: none;
+        font-size: 1.5rem;
+        margin: 20px;
+        cursor: pointer;
+
+    }
+
+    .hero {
+        text-align: center;
+        padding: 20px;
+
+    }
+
+    .hero button {
+        margin-top: 20px;
+    }
+
+    .hero h1 {
+        margin-left: 30px;
+        margin-right: 30px;
     }
 
     #text1,
@@ -220,7 +238,7 @@ h2 {
     }
 
     .image-column {
-        background-color: brown;
+        background-color: grey;
     }
 
     .benefits-box {
@@ -234,10 +252,57 @@ h2 {
         line-height: 40px;
     }
 
-    #section4 img {
+    /* Copy */
+    .custom-shape-divider-bottom-1709368856 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+
+    .custom-shape-divider-bottom-1709368856 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 47px;
+    }
+
+    .custom-shape-divider-bottom-1709368856 .shape-fill {
+        fill: #C51714;
+    }
+
+
+    .custom-shape-divider-bottom-1709369310 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+
+    .custom-shape-divider-bottom-1709369310 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 31px;
+    }
+
+    .custom-shape-divider-bottom-1709369310 .shape-fill {
+        fill: #FFFFFF;
+    }
+
+    /* End */
+
+
+    #explore img {
         width: 100%;
         height: 300px;
-        background-color: brown;
+        background-color: grey;
     }
 
     /* Tagit insperation */
@@ -333,7 +398,7 @@ h2 {
 
 
     #blog img {
-        background-color: brown;
+        background-color: grey;
         width: 100%;
         height: 300px;
     }
@@ -489,26 +554,19 @@ h2 {
 
     /* Javascript klasser: */
     .show {
-        left: 0;
-    }
-
-    .fade-layer {
-        position: fixed;
         top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-        display: none;
-        z-index: 5;
-    }
-
-    .fade-layer.visible {
-        display: block;
     }
 
     .step {
         display: none;
+    }
+
+    .hidden {
+        display: none !important;
+    }
+
+    .header-scrolled {
+        background-color: rgb(197, 23, 23);
     }
 
 }
