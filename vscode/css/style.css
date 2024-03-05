@@ -607,39 +607,59 @@ h2 {
     /* om oss grid */
     #om-oss-wrapper {
         display: grid;
-        height: 300vh;
+        height: 350vh;
         width: 100vw;
 
         grid-template-areas:
-            "hed"
             "ohr"
             "gol"
             "stf"
             "map"
             "fot";
 
-        grid-template-rows: 80px 400px 10fr 10fr 10fr 950px;
+        grid-template-rows: 400px 10fr 10fr 10fr 950px;
     }
 
     #om-oss-hero {
         grid-area: ohr;
-        background-color: orange;
+        padding-top: 80px;
     }
+
 
     #goal {
         grid-area: gol;
-        background-color: yellow;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     #staff {
         grid-area: stf;
-        background-color: green;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     #map {
         grid-area: map;
-        background-color: blue;
     }
+
+    /* om-oss styling */
+
+    #staff img {
+        width: 100%;
+        height: 300px;
+        background-color: grey;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .staff-card {
+        background-color: rgb(247, 247, 247);
+        border-radius: 10px;
+    }
+
+    .text-container {
+        padding: 10px;
+    }
+
 
 
     /* Javascript klasser: */

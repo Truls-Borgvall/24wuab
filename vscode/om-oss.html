@@ -12,45 +12,104 @@
 </head>
 
 <body>
-
-    <div class="fade-layer"></div>
-
     <nav class="mobile-nav">
-        <ul>
-            <li>dhuwdh</li>
-            <li>hduwhduw</li>
-            <li>dhuwdhw</li>
-        </ul>
+        <div class="nav-container">
+            <a href="index.html">Startsida</a>
+            <a href="borja-trana.html">Börja träna</a>
+            <a href="sporter.html">Våra sporter</a>
+            <a href="om-oss.html">Om oss</a>
+        </div>
     </nav>
 
     <div id="om-oss-wrapper">
-        <header>
+        <header id="header">
             <span class="material-symbols-outlined mobile-nav-button">
                 menu
             </span>
-            <img src="loggo" alt="Fighter Centre">
+
+            <span class="material-symbols-outlined hidden mobile-nav-cross">
+                close
+            </span>
+
+            <img src="img/logga.png" alt="Fighter Centre">
+
+            <span class="material-symbols-outlined">
+                language
+            </span>
         </header>
 
         <section id="om-oss-hero" class="hero">
-            <h1>hero-text</h1>
+            <h1>Lorem ipsum dolor sit amet.</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quas?</p>
-            <button>Button</button>
+            <button class="brand-button">Build modular</button>
         </section>
 
         <article id="goal">
             <h2>Vårt mål</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit similique labore eveniet? Eveniet quos voluptatem deleniti optio veritatis nam dicta reprehenderit, fuga magni suscipit quidem. Vero, at laboriosam autem voluptate, fuga doloremque ipsa consequatur officia animi sunt possimus deserunt odit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit similique labore eveniet? Eveniet
+                quos voluptatem deleniti optio veritatis nam dicta reprehenderit, fuga magni suscipit quidem. Vero, at
+                laboriosam autem voluptate, fuga doloremque ipsa consequatur officia animi sunt possimus deserunt odit!
+            </p>
         </article>
 
         <section id="staff">
-            <div id="staff1" class="staff">
-                <img src="" alt="">
-                <p>namn namnsson</p>
+
+            <h2>Utforska Fightercentre</h2>
+            <div class="carousel" data-carousel>
+                <button class="carousel-button prev" data-carousel-button="prev">previous</button>
+                <button class="carousel-button next" data-carousel-button="next">next</button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <div class="staff-card">
+                            <div class="navigator">
+                                <img src="" alt="">
+
+                                <div class="text-container">
+                                    <h3>Arvid Nilsson</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, est.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="slide" data-active>
+                        <div class="staff-card">
+                            <div class="navigator">
+                                <img src="" alt="">
+
+                                <div class="text-container">
+                                    <h3>Sven Svensson</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, est.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="slide" data-active>
+                        <div class="staff-card">
+                            <div class="navigator">
+                                <img src="" alt="">
+
+                                <div class="text-container">
+                                    <h3>Axel Axelsson</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, est.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <section id="map">
             <h2>Vart vi finns</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2132.2122368449477!2d11.96372857606125!3d57.69586394068515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff36d870257b7%3A0x173525c15935353!2sFighter%20Centre!5e0!3m2!1ssv!2sse!4v1709654017756!5m2!1ssv!2sse"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
         <footer>
