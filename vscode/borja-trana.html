@@ -12,37 +12,44 @@
 </head>
 
 <body>
-
-    <div class="fade-layer"></div>
-
     <nav class="mobile-nav">
-        <ul>
-            <li>dhuwdh</li>
-            <li>hduwhduw</li>
-            <li>dhuwdhw</li>
-        </ul>
+        <div class="nav-container">
+            <a href="index.html">Startsida</a>
+            <a href="borja-trana.html">Börja träna</a>
+            <a href="sporter.html">Våra sporter</a>
+            <a href="om-oss.html">Om oss</a>
+        </div>
     </nav>
 
 
     <div id="borja-trana-wrapper">
-        <header>
+        <header id="header">
             <span class="material-symbols-outlined mobile-nav-button">
                 menu
             </span>
-            <img src="loggo" alt="Fighter Centre">
+
+            <span class="material-symbols-outlined hidden mobile-nav-cross">
+                close
+            </span>
+
+            <img src="img/logga.png" alt="Fighter Centre">
+
+            <span class="material-symbols-outlined">
+                language
+            </span>
         </header>
 
         <section id="borja-trana-hero" class="hero">
-            <h1>hero-text</h1>
+            <h1>Lorem ipsum dolor sit amet.</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quas?</p>
-            <button>Button</button>
+            <button class="brand-button">Build modular</button>
         </section>
 
         <section id="questions">
             <form id="multiStepForm">
                 <div class="step" id="step1">
                     <h2>Vilken sport vill du börja?</h2>
-                    
+
                     <button type="button" data-action="next">Thai boxning</button>
                     <button type="button" data-action="next">MMA</button>
                     <button type="button" data-action="next">Boxning</button>
@@ -50,10 +57,9 @@
 
                 <div class="step" id="step2">
                     <h2>Person infromation</h2>
-                    <p>personummer:</p>
-                    <input type="text" placeholder="123456-1234">
-                    <p>Namn:</p>
+                    <p>Namn och personummer:</p>
                     <input type="text" placeholder="Namn namnsson">
+                    <input type="text" placeholder="123456-1234">
                     <p>Adress:</p>
                     <input type="text" placeholder="Adress">
                     <input type="text" placeholder="Stad">
@@ -62,24 +68,24 @@
                     <input type="text" placeholder="info@fightercentre.com">
                     <input type="text" placeholder="0720245075">
 
-                    <button type="button" data-action="prev">Föregående</button>
-                    <button type="button" data-action="next">Nästa</button>
+                    <button class="brand-button" type="button" data-action="prev">Föregående</button>
+                    <button class="brand-button" type="button" data-action="next">Nästa</button>
                 </div>
 
                 <div class="step" id="step3">
                     <h2>Betalnings uppgifter</h2>
                     <p>Kortnummer:</p>
                     <input type="text" placeholder="Kortnummer">
-                    <p>Utgångsdatum</p>
+                    <p>Utgångsdatum och säkerhetskod</p>
                     <input type="text" placeholder="Utgångsdatum">
-                    <p>Säkerhetskod</p>
                     <input type="text" placeholder="Säkerhetskod">
-                    <p>Vilkor:</p>
-                    <p>Jag godkänner fightercentres <a href="#">vilkor</a></p>
-                    <input type="checkbox" placeholder="info@fightercentre.com">
+                    <div class="checkbox-container">
+                        <p>Jag godkänner fightercentres <a href="#">vilkor</a></p>
+                        <input type="checkbox" placeholder="info@fightercentre.com">
+                    </div>
 
-                    <button type="button" data-action="prev">Föregående</button>
-                    <button type="button" data-action="next">Slutför</button>
+                    <button class="brand-button" type="button" data-action="prev">Föregående</button>
+                    <button class="brand-button" type="button" data-action="next">Slutför</button>
                 </div>
 
                 <div class="step" id="step4">

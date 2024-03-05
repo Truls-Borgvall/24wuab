@@ -18,7 +18,8 @@ body {
 }
 
 p {
-    color: rgb(106, 106, 106)
+    color: rgb(106, 106, 106);
+    line-height: 25px
 }
 
 h1 {
@@ -76,7 +77,7 @@ h2 {
             "blg"
             "fot";
 
-        grid-template-rows: 400px 10fr 10fr 10fr 5fr 10fr 10fr 10fr 900px;
+        grid-template-rows: 400px 10fr 10fr 10fr 5fr 10fr 10fr 10fr 950px;
     }
 
     header {
@@ -103,7 +104,7 @@ h2 {
         background-repeat: no-repeat;
         background-size: cover;
 
-        padding-top: 50px;
+        padding-top: 80px;
 
     }
 
@@ -451,65 +452,154 @@ h2 {
     /* sporter grid */
     #sporter-wrapper {
         display: grid;
-        height: 500vh;
+        height: 400vh;
         width: 100vw;
 
         grid-template-areas:
-            "hed"
             "shr"
             "sp1"
             "sp2"
             "sp3"
             "fot";
 
-        grid-template-rows: 80px 400px auto auto auto 750px;
+        grid-template-rows: 400px auto auto auto 950px;
     }
 
     #sporter-hero {
         grid-area: shr;
-        background-color: orange;
+        padding-top: 80px;
     }
 
     #sport1 {
         grid-area: sp1;
-        background-color: yellow;
+
     }
 
     #sport2 {
         grid-area: sp2;
-        background-color: green;
     }
 
     #sport3 {
         grid-area: sp3;
-        background-color: blue;
     }
 
+    /* Sporter styling */
+
+    #sport1,
+    #sport2,
+    #sport3 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #sporter-wrapper article img {
+        background-color: gray;
+        width: 100px;
+        height: 100px;
+    }
 
 
     /* borja-trana grid */
     #borja-trana-wrapper {
         display: grid;
-        height: 200vh;
+        height: 220vh;
         width: 100vw;
 
         grid-template-areas:
-            "hed"
             "bhr"
             "qst"
             "fot";
 
-        grid-template-rows: 80px 400px 10fr 750px;
+        grid-template-rows: 400px 10fr 950px;
     }
 
     #borja-trana-hero {
         grid-area: bhr;
-        background-color: orange;
+        padding-top: 80px;
     }
 
     #questions {
         grid-area: qst;
-        background-color: green;
+        border: rgb(106, 106, 106) solid 1px;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    /* borja-trana styling */
+
+    #step1 button {
+        width: 100%;
+        height: 100px;
+
+        margin: 10px 0 10px 0;
+
+        font-size: 1.5rem;
+        font-weight: bold;
+
+        color: white;
+        background-color: rgb(197, 23, 20);
+
+        border: none;
+        border-radius: 8px;
+
+        cursor: pointer;
+    }
+
+    #step1,
+    #step2,
+    #step3 {
+        position: relative;
+        height: 100%;
+    }
+
+    form {
+        height: 100%;
+    }
+
+    .brand-button[data-action="prev"] {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+    }
+
+    .brand-button[data-action="next"] {
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+    }
+
+    input {
+        border: rgb(106, 106, 106) 1px solid;
+        border-radius: 8px;
+        padding: 10px;
+        width: 120px;
+    }
+
+    input[placeholder="Kortnummer"] {
+        width: 270px;
+    }
+
+    .checkbox-container {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .checkbox-container p{
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .checkbox-container input {
+        border: rgb(106, 106, 106) 1px solid;
+        height: 10px;
+        width: 10px;
+        margin: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 10px;
     }
 
 
@@ -528,7 +618,7 @@ h2 {
             "map"
             "fot";
 
-        grid-template-rows: 80px 400px 10fr 10fr 10fr 750px;
+        grid-template-rows: 80px 400px 10fr 10fr 10fr 950px;
     }
 
     #om-oss-hero {
