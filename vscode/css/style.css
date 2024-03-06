@@ -56,8 +56,18 @@ h2 {
     cursor: pointer;
 }
 
+/* Java script classes */
+
+.hidden {
+    display: none !important;
+}
+
+.header-scrolled {
+    background-color: rgb(197, 23, 23);
+}
 
 
+/* Mobile css */
 @media screen and (max-width: 768px) {
 
     /* index grid */
@@ -81,7 +91,6 @@ h2 {
     }
 
     header {
-
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -585,7 +594,7 @@ h2 {
         margin-top: 10px;
     }
 
-    .checkbox-container p{
+    .checkbox-container p {
         margin-top: auto;
         margin-bottom: auto;
         margin-left: 0;
@@ -671,12 +680,52 @@ h2 {
         display: none;
     }
 
-    .hidden {
+}
+
+/* Computer css */
+@media screen and (min-width: 768px) {
+
+    .mobile-nav,
+    .mobile-nav-button,
+    .mobile-nav-cross {
         display: none !important;
     }
 
-    .header-scrolled {
-        background-color: rgb(197, 23, 23);
+    /* index grid */
+    #index-wrapper {
+        display: grid;
+        height: 600vh;
+        width: 100vw;
+
+        grid-template-areas:
+            "ihr"
+            "tx1"
+            "tx2"
+            "tx3"
+            "ben"
+            "sc4"
+            "soc"
+            "blg"
+            "fot";
+
+        grid-template-rows: 400px 10fr 10fr 10fr 5fr 10fr 10fr 10fr 950px;
     }
 
+    header {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 80px;
+        z-index: 4;
+
+        background-color: transparent;
+        backdrop-filter: blur(0px);
+        transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+
+    }
+
+    #index-hero {
+        grid-area: ihr;
+        background-color: red;
+    }
 }
