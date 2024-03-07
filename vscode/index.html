@@ -16,7 +16,7 @@
 
 <body>
 
-    <nav class="mobile-nav">
+    <nav class="mobile-nav hidden-desktop">
         <div class="nav-container">
             <a href="index.html">Startsida</a>
             <a href="borja-trana.html">Börja träna</a>
@@ -28,19 +28,30 @@
 
     <div id="index-wrapper">
         <header id="header">
-            <span class="material-symbols-outlined mobile-nav-button">
+            <span class="material-symbols-outlined mobile-nav-button hidden-desktop">
                 menu
             </span>
 
-            <span class="material-symbols-outlined hidden mobile-nav-cross">
+            <span class="material-symbols-outlined hidden mobile-nav-cross hidden-desktop">
                 close
             </span>
 
+            <div class="left-header">
+                <nav class="desktop-nav hidden-mobile">
+                    <a href="index.html">Startsida</a>
+                    <a href="borja-trana.html">Börja träna</a>
+                    <a href="sporter.html">Våra sporter</a>
+                    <a href="om-oss.html">Om oss</a>
+                </nav>
+            </div>
+
             <img src="img/logga.png" alt="Fighter Centre">
 
-            <span class="material-symbols-outlined">
-                language
-            </span>
+            <div class="right-header">
+                <span class="material-symbols-outlined">
+                    language
+                </span>
+            </div>
         </header>
 
         <section id="index-hero" class="hero">

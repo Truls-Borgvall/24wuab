@@ -70,6 +70,10 @@ h2 {
 /* Mobile css */
 @media screen and (max-width: 768px) {
 
+    .hidden-mobile {
+        display: none !important;
+    }
+
     /* index grid */
     #index-wrapper {
         display: grid;
@@ -102,8 +106,7 @@ h2 {
         z-index: 4;
 
         background-color: transparent;
-        backdrop-filter: blur(0px);
-        transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+        transition: background-color 0.3s ease;
     }
 
     #index-hero {
@@ -685,9 +688,7 @@ h2 {
 /* Computer css */
 @media screen and (min-width: 768px) {
 
-    .mobile-nav,
-    .mobile-nav-button,
-    .mobile-nav-cross {
+    .hidden-desktop {
         display: none !important;
     }
 
@@ -695,7 +696,8 @@ h2 {
     #index-wrapper {
         display: grid;
         height: 600vh;
-        width: 100vw;
+        /* VARFÖRRRRRR!!??: */
+        width: calc(100vw-1px);
 
         grid-template-areas:
             "ihr"
@@ -719,13 +721,84 @@ h2 {
         z-index: 4;
 
         background-color: transparent;
-        backdrop-filter: blur(0px);
-        transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+        transition: background-color 0.3s ease;
 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     #index-hero {
         grid-area: ihr;
-        background-color: red;
+        background-color: white;
     }
+
+    #text1 {
+        grid-area: tx1;
+        background-color: white;
+    }
+
+    #text2 {
+        grid-area: tx2;
+        background-color: white;
+    }
+
+    #text3 {
+        grid-area: tx3;
+        background-color: white;
+    }
+
+    #benefits {
+        grid-area: ben;
+        background-color: white;
+    }
+
+    #explore {
+        grid-area: sc4;
+        background-color: white;
+    }
+
+    #social {
+        grid-area: soc;
+        background-color: white;
+    }
+
+    #blog {
+        grid-area: blg;
+        background-color: white;
+    }
+
+    footer {
+        grid-area: fot;
+        background-color: rgb(197, 23, 20);
+    }
+
+    /* index styling */
+
+    .hero {
+        padding-top: 80px;
+    }
+
+    header img {
+        height: 70px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .left-header {
+        margin-left: 20px;
+    }
+
+    .left-header a {
+        margin: 10px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .right-header {
+        margin-right: 45px;
+    }
+
+
 }
