@@ -36,8 +36,8 @@
                 close
             </span>
 
-            <div class="left-header">
-                <nav class="desktop-nav hidden-mobile">
+            <div class="left-header hidden-mobile">
+                <nav class="desktop-nav">
                     <a href="index.html">Startsida</a>
                     <a href="borja-trana.html">Börja träna</a>
                     <a href="sporter.html">Våra sporter</a>
@@ -104,7 +104,7 @@
                 <button class="brand-button">button</button>
             </div>
 
-            <div class="custom-shape-divider-bottom-1709368856">
+            <div class="custom-shape-divider-bottom-1709368856 hidden-desktop">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                     preserveAspectRatio="none">
                     <path
@@ -131,7 +131,7 @@
                 </div>
             </div>
 
-            <div class="custom-shape-divider-bottom-1709369310">
+            <div class="custom-shape-divider-bottom-1709369310 hidden-desktop">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                     preserveAspectRatio="none">
                     <path
@@ -142,9 +142,8 @@
         </article>
 
         <section id="explore">
-
             <h2>Utforska Fightercentre</h2>
-            <div class="carousel" data-carousel>
+            <div class="carousel hidden-desktop" data-carousel>
                 <button class="carousel-button prev" data-carousel-button="prev">previous</button>
                 <button class="carousel-button next" data-carousel-button="next">next</button>
                 <ul data-slides>
@@ -185,75 +184,139 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="explore-container hidden-mobile">
+                <div class="box">
+                    <img src="#" alt="">
+
+                    <h3>Börja träna</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, est.</p>
+                </div>
+                <div class="box">
+                    <img src="#" alt="">
+
+                    <h3>Börja träna</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, est.</p>
+                </div>
+                <div class="wide-box box">
+                    <div class="image-container">
+                        <img src="#" alt="">
+                    </div>
+                    <div class="text-container">
+                        <h3>Börja träna</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, est.</p>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <section id="social">
             <h2>Join the community</h2>
             <p>Lorem ipsum dolor sit amet.</p>
 
-            <div class="social-container">
-                <div class="links">
-                    <div class="link-container">
-                        <img src="img/twitter-icon.png" alt="X">
-                        <div class="link-text-container">
-                            <p class="platform">X</p>
-                            <p>Lorem, ipsum.</p>
+            <div class="social-box">
+
+                <div class="social-container">
+                    <div class="links">
+                        <div class="link-container">
+                            <img src="img/twitter-icon.png" alt="X">
+                            <div class="link-text-container">
+                                <p class="platform">X</p>
+                                <p>Lorem, ipsum.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="link-container">
+                            <img src="img/forum-icon.png" alt="Forum">
+                            <div class="link-text-container">
+                                <p class="platform">Forum</p>
+                                <p>Lorem, ipsum.</p>
+                            </div>
+                        </div>
+
+                        <div class="link-container">
+                            <img src="img/discord-icon.png" alt="Discord">
+                            <div class="link-text-container">
+                                <p class="platform">Discord</p>
+                                <p>Lorem, ipsum.</p>
+                            </div>
+                        </div>
+
+                        <div class="link-container">
+                            <img src="img/reddit-icon.png" alt="Reddit">
+                            <div class="link-text-container">
+                                <p class="platform">Reddit</p>
+                                <p>Lorem, ipsum.</p>
+                            </div>
+                        </div>
+
+                        <div class="link-container">
+                            <img src="img/telegram-icon.png" alt="Telegram">
+                            <div class="link-text-container">
+                                <p class="platform">Telegram</p>
+                                <p>Lorem, ipsum.</p>
+                            </div>
                         </div>
                     </div>
 
-
-                    <div class="link-container">
-                        <img src="img/forum-icon.png" alt="Forum">
-                        <div class="link-text-container">
-                            <p class="platform">Forum</p>
-                            <p>Lorem, ipsum.</p>
-                        </div>
-                    </div>
-
-                    <div class="link-container">
-                        <img src="img/discord-icon.png" alt="Discord">
-                        <div class="link-text-container">
-                            <p class="platform">Discord</p>
-                            <p>Lorem, ipsum.</p>
-                        </div>
-                    </div>
-
-                    <div class="link-container">
-                        <img src="img/reddit-icon.png" alt="Reddit">
-                        <div class="link-text-container">
-                            <p class="platform">Reddit</p>
-                            <p>Lorem, ipsum.</p>
-                        </div>
-                    </div>
-
-                    <div class="link-container">
-                        <img src="img/telegram-icon.png" alt="Telegram">
-                        <div class="link-text-container">
-                            <p class="platform">Telegram</p>
-                            <p>Lorem, ipsum.</p>
-                        </div>
-                    </div>
+                    <a href="#">Hitta mer</a>
                 </div>
 
-                <a href="#">Hitta mer</a>
+                <img class="hidden-mobile social-img" src="" alt="">
             </div>
         </section>
 
         <section id="blog">
-            <h2 class="text-align-center">Blog</h2>
+            <h2>Blog</h2>
 
-            <img src="blog" alt="">
-            <h3>Lorem, ipsum dolor.</h3>
-            <a href="#">Läs nu</a>
+            <div class="blog-container">
+
+                <div class="main-blog">
+                    <img src="blog" alt="">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <a href="#">Läs nu</a>
+                </div>
+
+                <div class="side-blog-container">
+
+                    <div class="side-blog">
+                        <img src="blog" alt="">
+                        <div class="side-blog-text">
+                            <h4>Lorem, ipsum dolor.</h3>
+                                <a href="#">Läs nu</a>
+                        </div>
+                    </div>
+
+                    <div class="side-blog">
+                        <img src="blog" alt="">
+                        <div class="side-blog-text">
+                            <h4>Lorem, ipsum dolor.</h3>
+                                <a href="#">Läs nu</a>
+                        </div>
+                    </div>
+
+                    <div class="side-blog">
+                        <img src="blog" alt="">
+                        <div class="side-blog-text">
+                            <h4>Lorem, ipsum dolor.</h3>
+                                <a href="#">Läs nu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </section>
 
         <footer>
-            <h3>Prenumera till vårt veckobrev</h3>
-            <input type="text" placeholder="info@fightercentre.com">
-            <button>Prenumera</button>
+            <div class="newsletter-container">
+                <h3>Prenumera till vårt veckobrev</h3>
+                <input type="text" placeholder="info@fightercentre.com">
+                <button>Prenumera</button>
+            </div>
 
-            <div class="footer-list-container">
+            <div class="footer-list-container hidden-desktop">
 
                 <div class="footer-list">
                     <h4>Länkar</h4>
@@ -281,6 +344,33 @@
                     <p>Fre 15:45-20:15</p>
                     <p>Sön 09:45-21:15</p>
                 </div>
+            </div>
+
+            <div class="footer-list hidden-mobile">
+                <h4>Länkar</h4>
+                <a href="index.html">Start sida</a>
+                <a href="borja-trana.html">Börja träna</a>
+                <a href="sporter.html">Våra sporter</a>
+                <a href="om-oss.html">Om oss</a>
+            </div>
+
+            <div class="footer-list hidden-mobile">
+                <h4>Kontaktuppgifter</h4>
+                <p>Fighter Centre</p>
+                <p>Viktoriagatan 19</p>
+                <p>411 25 Göteborg</p>
+                <p>E-post: info@fightercentre.com</p>
+            </div>
+
+            <div class="footer-list hidden-mobile">
+                <h4>Öppettider receptionen</h4>
+                <p>Vår- & hösttermin</p>
+                <p>Mån 15:45-22:15</p>
+                <p>Tis 15:45-22:15</p>
+                <p>Ons 15:45-22:15</p>
+                <p>Tor 15:45-22:15</p>
+                <p>Fre 15:45-20:15</p>
+                <p>Sön 09:45-21:15</p>
             </div>
         </footer>
     </div>
