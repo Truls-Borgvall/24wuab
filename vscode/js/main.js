@@ -16,6 +16,16 @@ function showMenu() {
 button = document.querySelector(".mobile-nav-button").addEventListener("click", showMenu)
 cross = document.querySelector(".mobile-nav-cross").addEventListener("click", showMenu)
 
+//selection buttons:
+function buttonSelected() {
+    this.classList.toggle("selected");
+}
+
+let sportButtons = document.querySelectorAll(".sport-button");
+
+sportButtons.forEach(button => {
+    button.addEventListener("click", buttonSelected);
+});
 
 //Carousel (tagit insperation):
 const buttons = document.querySelectorAll("[data-carousel-button]")
@@ -50,7 +60,7 @@ window.addEventListener('scroll', function() {
 
 
 
-// Multi-step form:
+// Multi-step form (tagit insperation):
 document.addEventListener('click', function (event) {
     if (event.target.matches('button[data-action="next"]')) {
         nextStep();

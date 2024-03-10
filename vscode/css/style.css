@@ -1031,4 +1031,93 @@ h2 {
         border-radius: 8px;
         color: black;
     }
+
+    /* borja-trana grid */
+    #borja-trana-wrapper {
+        display: grid;
+        height: 380vh;
+        width: calc(100vw-1px);
+
+        grid-template-areas:
+            "bhr"
+            "qst"
+            "fot";
+
+        grid-template-rows: 400px 10fr 500px;
+    }
+
+    #borja-trana-hero {
+        grid-area: bhr;
+        padding-top: 80px;
+    }
+
+    #questions {
+        grid-area: qst;
+
+    }
+
+    /* borja-trana styling */
+    .sport-button {
+        padding: 10px;
+        margin: 10px 0 10px 0;
+
+        font-size: 1rem;
+        font-weight: bold;
+
+        color: black;
+        background-color: white;
+
+        border: 1px rgb(197, 23, 20) solid;
+        border-radius: 8px;
+
+        cursor: pointer;
+
+        transition: background-color 0.1s, border 0.1s, color 0.1s;
+    }
+
+    #questions {
+        padding: 10px 50px 10px 50px
+    }
+
+    .questions-container {
+        padding: 20px;
+        border: solid 1px rgb(106, 106, 106);
+        border-radius: 8px;
+        height: 95%;
+        
+    }
+
+    #questions input {
+        border: rgb(106, 106, 106) 1px solid;
+        border-radius: 8px;
+        padding: 10px;
+        margin-bottom: 10px;
+        width: calc(100% - 20px);
+    }
+
+    #questions .half-input {
+        width: calc(50% - 24px);
+        display: inline-block;
+    }
+
+    #questions input[type="checkbox"] {
+        width: 10px;
+        height: 10px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    .checkbox-container {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    /* Java script classes */
+    .selected {
+        background-color: rgb(197, 23, 20);
+        color: white;
+        border: none;
+    }
+
 }

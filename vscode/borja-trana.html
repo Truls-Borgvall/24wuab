@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="mobile-nav">
+    <nav class="mobile-nav hidden-desktop">
         <div class="nav-container">
             <a href="index.html">Startsida</a>
             <a href="borja-trana.html">Börja träna</a>
@@ -24,19 +24,30 @@
 
     <div id="borja-trana-wrapper">
         <header id="header">
-            <span class="material-symbols-outlined mobile-nav-button">
+            <span class="material-symbols-outlined mobile-nav-button hidden-desktop">
                 menu
             </span>
 
-            <span class="material-symbols-outlined hidden mobile-nav-cross">
+            <span class="material-symbols-outlined hidden mobile-nav-cross hidden-desktop">
                 close
             </span>
 
+            <div class="left-header hidden-mobile">
+                <nav class="desktop-nav">
+                    <a href="index.html">Startsida</a>
+                    <a href="borja-trana.html">Börja träna</a>
+                    <a href="sporter.html">Våra sporter</a>
+                    <a href="om-oss.html">Om oss</a>
+                </nav>
+            </div>
+
             <img src="img/logga.png" alt="Fighter Centre">
 
-            <span class="material-symbols-outlined">
-                language
-            </span>
+            <div class="right-header">
+                <span class="material-symbols-outlined">
+                    language
+                </span>
+            </div>
         </header>
 
         <section id="borja-trana-hero" class="hero">
@@ -46,13 +57,14 @@
         </section>
 
         <section id="questions">
-            <form id="multiStepForm">
+            <form id="multiStepForm" class="hidden-desktop">
                 <div class="step" id="step1">
                     <h2>Vilken sport vill du börja?</h2>
 
                     <button type="button" data-action="next">Thai boxning</button>
                     <button type="button" data-action="next">MMA</button>
                     <button type="button" data-action="next">Boxning</button>
+                    <button type="button" data-action="next">BJJ</button>
                 </div>
 
                 <div class="step" id="step2">
@@ -94,14 +106,58 @@
                 </div>
             </form>
 
+            <div class="questions-container hidden-mobile">
+                <h2>Börja träna</h2>
+
+                <h3>Välj en eller flera aktiviteter</h3>
+                <button class="sport-button">Thai boxning</button>
+                <button class="sport-button">MMA</button>
+                <button class="sport-button">Boxning</button>
+                <button class="sport-button">BJJ</button>
+
+                <h3>Mina uppgifter</h3>
+                <p>Personummer</p>
+                <input type="text" placeholder="123456-1234">
+
+                <p>Namn</p>
+                <input type="text" placeholder="Förnamn">
+                <input type="text" placeholder="Efternamn">
+
+                <h3>Adress</h3>
+                <input type="text" placeholder="Gatuadress">
+                <input type="text" placeholder="Stad" class="half-input">
+                <input type="text" placeholder="Postnummer" class="half-input">
+
+                <h3>Kontakt information</h3>
+                <p>Telefonummer</p>
+                <input type="text" placeholder="0720245075">
+                <p>Mail adress</p>
+                <input type="text" placeholder="info@fightercentre.com">
+
+                <h3>Betalninsuppgifter</h3>
+                <p>kortnummer</p>
+                <input type="text">
+                <p>Utgångsdatum och säkerhetskod</p>
+                <input type="text" class="half-input">
+                <input type="text" class="half-input">
+
+                <div class="checkbox-container">
+                    <p>Jag godkänner fightercentres <a href="#">vilkor</a></p>
+                    <input type="checkbox" placeholder="info@fightercentre.com">
+                </div>
+
+                <button class="brand-button">Skicka in ansökan</button>
+            </div>
         </section>
 
         <footer>
-            <h3>Prenumera till vårt veckobrev</h3>
-            <input type="text" placeholder="info@fightercentre.com">
-            <button>Prenumera</button>
+            <div class="newsletter-container">
+                <h3>Prenumera till vårt veckobrev</h3>
+                <input type="text" placeholder="info@fightercentre.com">
+                <button>Prenumera</button>
+            </div>
 
-            <div class="footer-list-container">
+            <div class="footer-list-container hidden-desktop">
 
                 <div class="footer-list">
                     <h4>Länkar</h4>
@@ -129,6 +185,33 @@
                     <p>Fre 15:45-20:15</p>
                     <p>Sön 09:45-21:15</p>
                 </div>
+            </div>
+
+            <div class="footer-list hidden-mobile">
+                <h4>Länkar</h4>
+                <a href="index.html">Start sida</a>
+                <a href="borja-trana.html">Börja träna</a>
+                <a href="sporter.html">Våra sporter</a>
+                <a href="om-oss.html">Om oss</a>
+            </div>
+
+            <div class="footer-list hidden-mobile">
+                <h4>Kontaktuppgifter</h4>
+                <p>Fighter Centre</p>
+                <p>Viktoriagatan 19</p>
+                <p>411 25 Göteborg</p>
+                <p>E-post: info@fightercentre.com</p>
+            </div>
+
+            <div class="footer-list hidden-mobile">
+                <h4>Öppettider receptionen</h4>
+                <p>Vår- & hösttermin</p>
+                <p>Mån 15:45-22:15</p>
+                <p>Tis 15:45-22:15</p>
+                <p>Ons 15:45-22:15</p>
+                <p>Tor 15:45-22:15</p>
+                <p>Fre 15:45-20:15</p>
+                <p>Sön 09:45-21:15</p>
             </div>
         </footer>
     </div>
