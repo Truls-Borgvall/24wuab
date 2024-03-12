@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="mobile-nav">
+    <nav class="mobile-nav hidden-desktop">
         <div class="nav-container">
             <a href="index.html">Startsida</a>
             <a href="borja-trana.html">Börja träna</a>
@@ -23,19 +23,30 @@
 
     <div id="om-oss-wrapper">
         <header id="header">
-            <span class="material-symbols-outlined mobile-nav-button">
+            <span class="material-symbols-outlined mobile-nav-button hidden-desktop">
                 menu
             </span>
 
-            <span class="material-symbols-outlined hidden mobile-nav-cross">
+            <span class="material-symbols-outlined hidden mobile-nav-cross hidden-desktop">
                 close
             </span>
 
+            <div class="left-header hidden-mobile">
+                <nav class="desktop-nav">
+                    <a href="index.html">Startsida</a>
+                    <a href="borja-trana.html">Börja träna</a>
+                    <a href="sporter.html">Våra sporter</a>
+                    <a href="om-oss.html">Om oss</a>
+                </nav>
+            </div>
+
             <img src="img/logga.png" alt="Fighter Centre">
 
-            <span class="material-symbols-outlined">
-                language
-            </span>
+            <div class="right-header">
+                <span class="material-symbols-outlined">
+                    language
+                </span>
+            </div>
         </header>
 
         <section id="om-oss-hero" class="hero">
@@ -46,16 +57,26 @@
 
         <article id="goal">
             <h2>Vårt mål</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit similique labore eveniet? Eveniet
-                quos voluptatem deleniti optio veritatis nam dicta reprehenderit, fuga magni suscipit quidem. Vero, at
-                laboriosam autem voluptate, fuga doloremque ipsa consequatur officia animi sunt possimus deserunt odit!
-            </p>
+            <div class="hidden-desktop">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit similique labore eveniet?
+                    Eveniet
+                    quos voluptatem deleniti optio veritatis nam dicta reprehenderit, fuga magni suscipit quidem. Vero,
+                    at
+                    laboriosam autem voluptate, fuga doloremque ipsa consequatur officia animi sunt possimus deserunt
+                    odit!
+                </p>
+            </div>
+            <div class="hidden-mobile">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, numquam. Placeat excepturi officia, laborum animi necessitatibus, voluptates maxime expedita voluptatem ad rerum, deserunt magnam odit nisi fugiat quae dolor. Ullam nobis soluta pariatur eius accusamus ut sed repudiandae reprehenderit maxime.</p>
+                <img src="" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, laboriosam.</p>
+            </div>
         </article>
 
         <section id="staff">
 
-            <h2>Utforska Fightercentre</h2>
-            <div class="carousel" data-carousel>
+            <h2>Våra tränare</h2>
+            <div class="carousel hidden-desktop" data-carousel>
                 <button class="carousel-button prev" data-carousel-button="prev">previous</button>
                 <button class="carousel-button next" data-carousel-button="next">next</button>
                 <ul data-slides>
@@ -102,6 +123,40 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="hidden-mobile staff-container">
+                <div class="staff-card">
+                    <img src="" alt="">
+                    <div class="padding">
+                        <h3>Edward Petterson</h3>
+                        <p>Edward Petterson utbildar innom blal abal l lw dwdw</p>
+                    </div>
+                </div>
+
+                <div class="staff-card">
+                    <img src="" alt="">
+                    <div class="padding">
+                        <h3>Edward Petterson</h3>
+                        <p>Edward Petterson utbildar innom blal abal l lw dwdw</p>
+                    </div>
+                </div>
+
+                <div class="staff-card">
+                    <img src="" alt="">
+                    <div class="padding">
+                        <h3>Edward Petterson</h3>
+                        <p>Edward Petterson utbildar innom blal abal l lw dwdw</p>
+                    </div>
+                </div>
+
+                <div class="staff-card">
+                    <img src="" alt="">
+                    <div class="padding">
+                        <h3>Edward Petterson</h3>
+                        <p>Edward Petterson utbildar innom blal abal l lw dwdw</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="map">
@@ -113,11 +168,13 @@
         </section>
 
         <footer>
-            <h3>Prenumera till vårt veckobrev</h3>
-            <input type="text" placeholder="info@fightercentre.com">
-            <button>Prenumera</button>
+            <div class="newsletter-container">
+                <h3>Prenumera till vårt veckobrev</h3>
+                <input type="text" placeholder="info@fightercentre.com">
+                <button>Prenumera</button>
+            </div>
 
-            <div class="footer-list-container">
+            <div class="footer-list-container hidden-desktop">
 
                 <div class="footer-list">
                     <h4>Länkar</h4>
@@ -145,6 +202,33 @@
                     <p>Fre 15:45-20:15</p>
                     <p>Sön 09:45-21:15</p>
                 </div>
+            </div>
+
+            <div class="footer-list hidden-mobile">
+                <h4>Länkar</h4>
+                <a href="index.html">Start sida</a>
+                <a href="borja-trana.html">Börja träna</a>
+                <a href="sporter.html">Våra sporter</a>
+                <a href="om-oss.html">Om oss</a>
+            </div>
+
+            <div class="footer-list hidden-mobile">
+                <h4>Kontaktuppgifter</h4>
+                <p>Fighter Centre</p>
+                <p>Viktoriagatan 19</p>
+                <p>411 25 Göteborg</p>
+                <p>E-post: info@fightercentre.com</p>
+            </div>
+
+            <div class="footer-list hidden-mobile">
+                <h4>Öppettider receptionen</h4>
+                <p>Vår- & hösttermin</p>
+                <p>Mån 15:45-22:15</p>
+                <p>Tis 15:45-22:15</p>
+                <p>Ons 15:45-22:15</p>
+                <p>Tor 15:45-22:15</p>
+                <p>Fre 15:45-20:15</p>
+                <p>Sön 09:45-21:15</p>
             </div>
         </footer>
     </div>

@@ -56,6 +56,11 @@ h2 {
     cursor: pointer;
 }
 
+.brand-button a {
+    text-decoration: none;
+    color: white;
+}
+
 /* Java script classes */
 
 .hidden {
@@ -264,53 +269,6 @@ h2 {
     .benefits-container li {
         line-height: 40px;
     }
-
-    /* Copy */
-    .custom-shape-divider-bottom-1709368856 {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-        transform: rotate(180deg);
-    }
-
-    .custom-shape-divider-bottom-1709368856 svg {
-        position: relative;
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 47px;
-    }
-
-    .custom-shape-divider-bottom-1709368856 .shape-fill {
-        fill: #C51714;
-    }
-
-
-    .custom-shape-divider-bottom-1709369310 {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-        transform: rotate(180deg);
-    }
-
-    .custom-shape-divider-bottom-1709369310 svg {
-        position: relative;
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 31px;
-    }
-
-    .custom-shape-divider-bottom-1709369310 .shape-fill {
-        fill: #FFFFFF;
-    }
-
-    /* End */
-
 
     #explore img {
         width: 100%;
@@ -613,12 +571,10 @@ h2 {
         margin-left: 10px;
     }
 
-
-
     /* om oss grid */
     #om-oss-wrapper {
         display: grid;
-        height: 350vh;
+        height: 330vh;
         width: 100vw;
 
         grid-template-areas:
@@ -628,7 +584,7 @@ h2 {
             "map"
             "fot";
 
-        grid-template-rows: 400px 10fr 10fr 10fr 950px;
+        grid-template-rows: 400px 6fr 10fr 10fr 950px;
     }
 
     #om-oss-hero {
@@ -849,13 +805,13 @@ h2 {
     }
 
     .benefits-container {
-        margin-left: 70px;
-        margin-right: 70px;
+        width: 50%;
     }
 
     .benefits-container li {
         line-height: 50px;
         font-size: 1.2rem;
+        width: 100%;
     }
 
     .explore-container {
@@ -867,7 +823,7 @@ h2 {
 
     .box {
         width: 47%;
-        height: 200px;
+        height: 250px;
         background-color: rgb(242, 242, 242);
         border-radius: 8px;
         margin: 5px;
@@ -878,12 +834,17 @@ h2 {
         width: 97%;
         display: flex;
         align-items: center;
+        height: 200px;
     }
 
     .box img {
         background-color: gray;
         height: 100px;
         width: 100px;
+    }
+
+    .wide-box img {
+        margin-right: 10px;
     }
 
     .social-container {
@@ -931,7 +892,7 @@ h2 {
 
     .social-img {
         width: 40%;
-        height: 500px;
+        height: 650px;
         background-color: gray;
     }
 
@@ -1161,6 +1122,81 @@ h2 {
         width: 300px;
         height: 200px;
         background-color: gray;
+    }
+
+    /* om-oss grid */
+    #om-oss-wrapper {
+        display: grid;
+        height: 350vh;
+        width: calc(100vw-1px);
+
+        grid-template-areas:
+            "ohr"
+            "gol"
+            "stf"
+            "map"
+            "fot";
+
+        grid-template-rows: 400px 10fr 10fr 10fr 500px;
+    }
+
+    #om-oss-hero {
+        grid-area: ohr;
+        padding-top: 80px;
+    }
+
+
+    #goal {
+        grid-area: gol;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #staff {
+        grid-area: stf;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #map {
+        grid-area: map;
+    }
+
+    /* om-oss styling */
+    #goal img {
+        background-color: gray;
+        height: 200px;
+        width: 300px;
+    }
+
+    .staff-card {
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 15px;
+        background-color: snow;
+        width: calc(90%/4);
+    }
+    
+    .staff-card p {
+        text-align: left;
+    }
+    
+    .staff-card img {
+        width: 100%;
+        height: 300px;
+        border-radius: 15px 15px 0 0;
+        background-color: gray;
+    }
+    
+    .padding {
+        padding: 10px;
+    }
+
+    .staff-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
     }
 
     /* Java script classes */
