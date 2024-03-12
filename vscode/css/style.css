@@ -1084,7 +1084,7 @@ h2 {
         border: solid 1px rgb(106, 106, 106);
         border-radius: 8px;
         height: 95%;
-        
+
     }
 
     #questions input {
@@ -1111,6 +1111,56 @@ h2 {
         display: flex;
         align-items: center;
         margin-top: 20px;
+    }
+
+    /* sporter grid */
+    #sporter-wrapper {
+        display: grid;
+        height: 400vh;
+        width: calc(100vw-px);
+
+        grid-template-areas:
+            "shr"
+            "sp1"
+            "sp2"
+            "sp3"
+            "fot";
+
+        grid-template-rows: 400px auto auto auto 500px;
+    }
+
+    #sporter-hero {
+        grid-area: shr;
+        padding-top: 80px;
+    }
+
+    #sport1 {
+        grid-area: sp1;
+
+    }
+
+    #sport2 {
+        grid-area: sp2;
+    }
+
+    #sport3 {
+        grid-area: sp3;
+    }
+
+    /* sporter styling */
+    #sport1,
+    #sport2,
+    #sport3 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #sport1 img,
+    #sport2 img,
+    #sport3 img {
+        width: 300px;
+        height: 200px;
+        background-color: gray;
     }
 
     /* Java script classes */
