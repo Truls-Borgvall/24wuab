@@ -34,7 +34,6 @@ h2 {
     color: rgb(197, 23, 20);
 }
 
-
 .brand-gradient {
     color: transparent;
     background-clip: text;
@@ -82,7 +81,7 @@ h2 {
     /* index grid */
     #index-wrapper {
         display: grid;
-        height: 600vh;
+        height: 620vh;
         width: 100vw;
 
         grid-template-areas:
@@ -748,7 +747,8 @@ h2 {
         margin-top: 30px;
     }
 
-    header img {
+    header img,
+    header .img-link {
         height: 70px;
         position: absolute;
         left: 50%;
