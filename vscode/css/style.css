@@ -96,7 +96,7 @@ h2 {
             "blg"
             "fot";
 
-        grid-template-rows: 400px 10fr 10fr 10fr 5fr 10fr 10fr 10fr 950px;
+        grid-template-rows: 450px 10fr 10fr 10fr 5fr 10fr 10fr 10fr 950px;
     }
 
     header {
@@ -421,7 +421,7 @@ h2 {
     /* sporter grid */
     #sporter-wrapper {
         display: grid;
-        height: 400vh;
+        height: 380vh;
         width: 100vw;
 
         grid-template-areas:
@@ -431,7 +431,7 @@ h2 {
             "sp3"
             "fot";
 
-        grid-template-rows: 400px auto auto auto 950px;
+        grid-template-rows: 450px 10fr 10fr 10fr 950px;
     }
 
     #sporter-hero {
@@ -479,7 +479,7 @@ h2 {
             "qst"
             "fot";
 
-        grid-template-rows: 400px 10fr 950px;
+        grid-template-rows: 450px 10fr 950px;
     }
 
     #borja-trana-hero {
@@ -584,7 +584,7 @@ h2 {
             "map"
             "fot";
 
-        grid-template-rows: 400px 6fr 10fr 10fr 950px;
+        grid-template-rows: 450px 6fr 10fr 10fr 950px;
     }
 
     #om-oss-hero {
