@@ -81,7 +81,7 @@ h2 {
     /* index grid */
     #index-wrapper {
         display: grid;
-        height: 620vh;
+        height: 650vh;
         width: 100vw;
 
         grid-template-areas:
@@ -95,7 +95,7 @@ h2 {
             "blg"
             "fot";
 
-        grid-template-rows: 450px 10fr 10fr 10fr 5fr 10fr 10fr 10fr 950px;
+        grid-template-rows: calc(60vh + 50px) 10fr 10fr 10fr 5fr 10fr 10fr 10fr 950px;
     }
 
     header {
@@ -116,9 +116,6 @@ h2 {
     #index-hero {
         grid-area: ihr;
         background-color: white;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
 
         padding-top: 80px;
 
@@ -226,6 +223,30 @@ h2 {
         text-align: center;
         padding: 20px;
 
+    }
+
+    #index-hero-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60vh;
+        object-fit: cover;
+    }
+
+    .hero-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    }
+
+    .hero p {
+        max-width: 80%;
+        margin: auto;
+        color: white;
     }
 
     .hero button {
@@ -649,7 +670,7 @@ h2 {
     /* index grid */
     #index-wrapper {
         display: grid;
-        height: 600vh;
+        height: 670vh;
         /* VARFÖRRRRRR!!??: */
         width: calc(100vw-1px);
 
@@ -664,7 +685,7 @@ h2 {
             "blg"
             "fot";
 
-        grid-template-rows: 400px 10fr 10fr 10fr 5fr 10fr 10fr 10fr 500px;
+        grid-template-rows: calc(100vh + 40px) 10fr 10fr 10fr 5fr 10fr 10fr 10fr 500px;
     }
 
     header {
@@ -685,6 +706,7 @@ h2 {
     #index-hero {
         grid-area: ihr;
         background-color: white;
+        overflow: hidden;
     }
 
     #text1 {
@@ -734,13 +756,32 @@ h2 {
         text-align: center;
     }
 
-    .hero h1 {
-        font-size: 3rem;
+    #index-hero-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
     }
 
     .hero p {
         max-width: 80%;
         margin: auto;
+        color: white;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
     }
 
     .hero button {
@@ -1181,18 +1222,18 @@ h2 {
         background-color: snow;
         width: calc(90%/4);
     }
-    
+
     .staff-card p {
         text-align: left;
     }
-    
+
     .staff-card img {
         width: 100%;
         height: 300px;
         border-radius: 15px 15px 0 0;
         background-color: gray;
     }
-    
+
     .padding {
         padding: 10px;
     }
