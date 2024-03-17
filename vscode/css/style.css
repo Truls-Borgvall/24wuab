@@ -22,6 +22,10 @@ p {
     line-height: 25px
 }
 
+.hero p {
+    font-size: 1.2rem;
+}
+
 h1 {
     font-size: 2.5rem;
 }
@@ -81,7 +85,7 @@ h2 {
     /* index grid */
     #index-wrapper {
         display: grid;
-        height: 650vh;
+        height: 600vh;
         width: 100vw;
 
         grid-template-areas:
@@ -95,7 +99,7 @@ h2 {
             "blg"
             "fot";
 
-        grid-template-rows: calc(60vh + 50px) 10fr 10fr 10fr 5fr 10fr 10fr 10fr 950px;
+        grid-template-rows: calc(60vh + 50px) 8fr 8fr 8fr 4fr 10fr 10fr 10fr 950px;
     }
 
     header {
@@ -235,12 +239,12 @@ h2 {
     }
 
     .hero-text {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 1;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1;
     }
 
     .hero p {
@@ -258,25 +262,11 @@ h2 {
         margin-right: 30px;
     }
 
-    #text1,
-    #text2,
-    #text3 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .image-column,
-    .text-column {
-        flex: 1;
-    }
-
     .image-column img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .image-column {
-        background-color: grey;
+        width: 300px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 8px;
     }
 
     .benefits-box {
@@ -285,7 +275,6 @@ h2 {
         align-items: center;
     }
 
-
     .benefits-container li {
         line-height: 40px;
     }
@@ -293,7 +282,8 @@ h2 {
     #explore img {
         width: 100%;
         height: 300px;
-        background-color: grey;
+        object-fit: cover;
+        border-radius: 8px;
     }
 
     /* Tagit insperation */
@@ -343,7 +333,7 @@ h2 {
     .explore-card {
         background-color: rgb(242, 242, 242);
         padding: 10px;
-        border-radius: 10px;
+        border-radius: 8px;
     }
 
     .social-container {
@@ -388,9 +378,10 @@ h2 {
     }
 
     #blog img {
-        background-color: grey;
+        border-radius: 8px;
         width: 100%;
         height: 300px;
+        object-fit: cover;
     }
 
     footer * {
@@ -456,7 +447,12 @@ h2 {
 
     #sporter-hero {
         grid-area: shr;
-        padding-top: 80px;
+        padding-top: 70px;
+        padding-bottom: 5px;
+        background-image: url(/img/sporter-hero.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
     #sport1 {
@@ -473,6 +469,12 @@ h2 {
     }
 
     /* Sporter styling */
+
+    #sporter-hero h1 {
+        color: white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
 
     #sport1,
     #sport2,
@@ -499,7 +501,7 @@ h2 {
             "qst"
             "fot";
 
-        grid-template-rows: 450px 10fr 950px;
+        grid-template-rows: 400px 10fr 950px;
     }
 
     #borja-trana-hero {
@@ -516,6 +518,10 @@ h2 {
     }
 
     /* borja-trana styling */
+
+    #borja-trana-hero p {
+        color: rgb(106, 106, 106);
+    }
 
     #step1 button {
         width: 100%;
@@ -610,8 +616,11 @@ h2 {
     #om-oss-hero {
         grid-area: ohr;
         padding-top: 80px;
+        background-image: url(/img/om-oss-hero.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
-
 
     #goal {
         grid-area: gol;
@@ -631,6 +640,16 @@ h2 {
 
     /* om-oss styling */
 
+    #om-oss-hero h1 {
+        color: white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
+
+    #om-oss-hero p {
+        display: none;
+    }
+
     #staff img {
         width: 100%;
         height: 300px;
@@ -646,8 +665,6 @@ h2 {
     #staff .text-container {
         padding: 10px;
     }
-
-
 
     /* Javascript klasser: */
     .show {
@@ -766,12 +783,12 @@ h2 {
     }
 
     .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1;
     }
 
     .hero p {
@@ -820,9 +837,11 @@ h2 {
     #text1 img,
     #text2 img,
     #text3 img {
-        background-color: gray;
-        width: 200px;
-        height: 200px;
+        height: 250px;
+        width: 350;
+        object-fit: cover;
+        border-radius: 8px;
+
     }
 
     #text1,
@@ -884,13 +903,16 @@ h2 {
     }
 
     .box img {
-        background-color: gray;
         height: 100px;
-        width: 100px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 8px;
     }
 
     .wide-box img {
         margin-right: 10px;
+        height: 180px;
+        width: 300px;
     }
 
     .social-container {
@@ -939,7 +961,8 @@ h2 {
     .social-img {
         width: 40%;
         height: 650px;
-        background-color: gray;
+        object-fit: cover;
+        border-radius: 8px;
     }
 
     .social-box {
@@ -956,10 +979,10 @@ h2 {
     }
 
     .main-blog img {
-        background-color: gray;
         height: 300px;
         width: 600px;
         border-radius: 8px;
+        object-fit: cover;
     }
 
     .blog-container {
@@ -971,7 +994,7 @@ h2 {
         height: 100px;
         width: 100px;
         border-radius: 8px;
-        background-color: gray;
+        object-fit: cover;
     }
 
     .side-blog {
@@ -1050,7 +1073,7 @@ h2 {
             "qst"
             "fot";
 
-        grid-template-rows: 400px 10fr 500px;
+        grid-template-rows: 380px 10fr 500px;
     }
 
     #borja-trana-hero {
@@ -1064,6 +1087,11 @@ h2 {
     }
 
     /* borja-trana styling */
+
+    #borja-trana-hero p {
+        color: rgb(106, 106, 106);
+    }
+
     .sport-button {
         padding: 10px;
         margin: 10px 0 10px 0;
@@ -1139,6 +1167,10 @@ h2 {
     #sporter-hero {
         grid-area: shr;
         padding-top: 80px;
+        background-image: url(/img/sporter-hero.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
     #sport1 {
@@ -1155,6 +1187,12 @@ h2 {
     }
 
     /* sporter styling */
+    #sporter-hero h1 {
+        color: white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
+
     #sport1,
     #sport2,
     #sport3 {
@@ -1189,8 +1227,11 @@ h2 {
     #om-oss-hero {
         grid-area: ohr;
         padding-top: 80px;
+        background-image: url(/img/om-oss-hero.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
-
 
     #goal {
         grid-area: gol;
@@ -1209,6 +1250,12 @@ h2 {
     }
 
     /* om-oss styling */
+    #om-oss-hero h1 {
+        color: white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
+
     #goal img {
         background-color: gray;
         height: 200px;
@@ -1249,7 +1296,7 @@ h2 {
     .selected {
         background-color: rgb(197, 23, 20);
         color: white;
-        border: none;
+        border-color: white;
     }
 
 }
