@@ -60,9 +60,16 @@ h2 {
     cursor: pointer;
 }
 
-.brand-button a {
-    text-decoration: none;
+.brand-link-button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
     color: white;
+    background-color: rgb(197, 23, 20);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .dark-overlay {
@@ -83,6 +90,11 @@ h2 {
 
 .header-scrolled {
     background-color: rgb(197, 23, 20);
+}
+
+header.header-scrolled .left-header nav.desktop-nav a,
+header.header-scrolled {
+    color: white !important;
 }
 
 
@@ -262,8 +274,10 @@ h2 {
         color: white;
     }
 
-    .hero button {
+    .hero a,
+    .hero-text a {
         margin-top: 20px;
+        display: inline-block;
     }
 
     .hero h1 {
@@ -495,7 +509,7 @@ h2 {
 
     #sporter-hero h1,
     #sporter-hero p,
-    #sporter-hero button {
+    #sporter-hero a {
         position: relative;
         z-index: 1;
     }
@@ -674,9 +688,9 @@ h2 {
 
     #om-oss-hero h1,
     #om-oss-hero p,
-    #om-oss-hero button {
+    #om-oss-hero a {
         position: relative;
-        z-index: 1;
+        z-index: 2;
     }
 
     #om-oss-hero h1 {
@@ -684,11 +698,11 @@ h2 {
     }
 
     #goal img {
-        width: 300px;
+        width: 350px;
         height: 200px;
         object-fit: cover;
         border-radius: 8px;
-        margin-left: calc(50% - 150px);
+        margin-left: calc(50% - 175px);
     }
 
     #staff img {
@@ -810,6 +824,11 @@ h2 {
 
     /* index styling */
 
+    nav.desktop-nav a,
+    header {
+        color: white
+    }
+
     .hero {
         padding-top: 80px;
         text-align: center;
@@ -843,9 +862,12 @@ h2 {
         font-size: 3rem;
     }
 
-    .hero button {
+    .hero a,
+    .hero-text a {
         margin-top: 30px;
+        display: inline-block;
     }
+
 
     header img,
     header .img-link {
@@ -1130,6 +1152,11 @@ h2 {
 
     /* borja-trana styling */
 
+    #borja-trana-wrapper nav.desktop-nav a,
+    #borja-trana-wrapper header {
+        color: black;
+    }
+
     #borja-trana-hero p {
         color: rgb(57, 57, 57);
     }
@@ -1233,7 +1260,7 @@ h2 {
     /* sporter styling */
     #sporter-hero h1,
     #sporter-hero p,
-    #sporter-hero button {
+    #sporter-hero a {
         z-index: 2;
         position: relative;
     }
@@ -1305,7 +1332,7 @@ h2 {
 
     #om-oss-hero h1,
     #om-oss-hero p,
-    #om-oss-hero button {
+    #om-oss-hero a {
         z-index: 2;
         position: relative;
     }
@@ -1315,13 +1342,13 @@ h2 {
     }
 
     #goal img {
-        height: 200px;
-        width: 400px;
+        height: 300px;
+        width: 500px;
 
         border-radius: 8px;
         object-fit: cover;
-
-        margin-left: calc(50% - 200px);
+        float: left;
+        margin-right: 15px;
     }
 
     .staff-card {
